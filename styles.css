@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    background-color: wheat;
+    background-size: cover;
+}
+main{
+    margin: 0;
+    top: 0;
+    padding-top: 0.75rem;
+    padding-left: 3rem;
+}
+.title-bar{
+    background-color: rgb(11, 87, 62);
+    top: 0;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: sandybrown;
+    max-height: 95px;
+    min-height: 75px;
+    line-height: 2px;
+}
+.bodvar-container{
+    width: 33.34%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 12%;
+}
+.bodvar-text{
+    color: rgb(3, 65, 45);
+    line-height: 1px;
+    font-size: x-large;
+}
+#bodvar{
+    padding-top: 4rem;
+    width: 15rem;
+    height: 17rem;
+}
+#bodvar:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#bodvar:active{
+    transform: scale(1.25);
+}
+.shop-div{
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(5, 5, 90);
+    color: white;
+    padding: 0.25rem 1.5rem;
+    border-radius: 3px;
+    border: 5px solid rgb(11, 87, 62);
+}
+#helper-legends, #swords, #hammers, #pogage-points{
+    border-bottom: 3px solid whitesmoke;
+}
+#helper-legends, #swords, #hammers, #pogage-points, #bodvars-bear{
+    line-height: 1.75px;
+}
+#helper-legends:hover, #swords:hover, #hammers:hover, #pogage-points:hover, #bodvars-bear:hover{
+    color: goldenrod;
+    cursor: pointer;
+}

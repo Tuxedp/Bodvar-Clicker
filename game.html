@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Bodvar-Clicker(Game)</title>
+        <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR1zqGX9rR-6kBouFm8Hgl44pwwnS2WMgY-qup2fOAPA&s">
+    </head>
+    <body>
+        <!-- Header showing title of game d-->
+        <div class="title-bar">
+            <h1>BODVAR CLICKER</h1>
+            <p><i>Click on the <strong>BODVAR</strong> to play.</i></p>
+        </div>
+    <main>
+        <!-- Clicker Section:
+
+            This section includes:
+            - Bodvar img for clicking on
+            - Text showing currency and amount of clicks
+        -->
+        <section class="clicky-part">
+            <div class="bodvar-container">
+                <div class="bodvar-text">
+                    <h1 id="bodvar-count">Bodvars: 0</h1>
+                    <p id="click-count">Total clicks: 0</p>
+                </div>
+                <div class="img-container">
+                    <img id="bodvar" onmousedown="ClicksCounter(), BodvarsManager(1)" src="https://i.redd.it/j6w2x907uyz91.png" alt="An image of Bodvar (The GOAT). This game is pretty much unplayable without him bro...">
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section:
+            
+            This section includes:
+            - Shop for buying items
+        -->
+        <section class="shop-section">
+            <div class="shop-div">
+                <div id="helper-legends" onmousedown="Shop(1)">
+                    <h2 id="helper-text">Legend Helpers: 0</h2>
+                    <p id="helper-price">Price: 15</p>
+                </div>
+                <div id="swords" onmousedown="Shop(2)">
+                    <h2 id="swords-text">Swords: 0</h2>
+                    <p id="sword-price">Price: 150</p>
+                </div>
+                <div id="hammers" onmousedown="Shop(3)">
+                    <h2 id="hammers-text">Hammers: 0</h2>
+                    <p id="hammer-price">Price: 500</p>
+                </div>
+                <div id="pogage-points" onmousedown="Shop(4)">
+                    <h2 id="pogage-text">Pogage Points: 0</h2>
+                    <p id="pp-price">Price: 1225</p>
+                </div>
+                <div id="bodvars-bear" onmousedown="Shop(5)">
+                    <h2 id="bear-text">Bodvars bears: 0</h2>
+                    <p id="bear-price">Price: 15000</p>
+                </div>
+            </div>
+        </section>
+        <script src="scripts.js"></script>
+    </main>
+    </body>
+</html>
