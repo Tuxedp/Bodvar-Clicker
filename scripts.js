@@ -6,9 +6,6 @@ let bodvarCounter = 0;
 const numOfClicksText = document.getElementById("click-count");
 let numOfClicks = 0;
 
-// Audio player
-var audioStore = new Audio('file:///C:/Users/Cameron/Downloads/coinbag-91016.mp3');
-
 // Items from the store
 
 // Helpers
@@ -94,7 +91,6 @@ function Shop(buyType){
             BodvarsManager(-1);
             helperPrice = (Math.floor(helperPrice * 1.87));
             helperPriceText.innerText = "Price: " + helperPrice;
-            audioStore.play();
         }
         else{
             helperPriceText.innerText = "You can't buy that bud... Price: " + helperPrice;
@@ -108,7 +104,7 @@ function Shop(buyType){
             swordPrice = (Math.floor(swordPrice * 1.5));
             swordPriceText.innerText = "Price: " + swordPrice;
             SwordEffects();
-            audioStore.play();
+           
         }
         else{
             swordPriceText.innerText = "Bro ur not Zoro... Price: " + swordPrice;
@@ -122,7 +118,7 @@ function Shop(buyType){
             hammerPrice = Math.floor(hammerPrice * 1.75);
             hammerPriceText.innerText = "Price: " + hammerPrice;
             HammerEffects();
-            audioStore.play();
+           
         }
         else{
             hammerPriceText.innerText = "Bro is not Bob the builder... Price: " + hammerPrice;
@@ -136,7 +132,7 @@ function Shop(buyType){
             PPPrice = Math.floor(PPPrice * 2);
             PPPriceText.innerText = "Price: " + PPPrice;
             PPEffects();
-            audioStore.play();
+            
         }
         else{
             PPPriceText.innerText = "No PP points for u... Price: " + PPPrice;
@@ -149,7 +145,7 @@ function Shop(buyType){
             BodvarsManager(-5);
             bearPrice = Math.floor(bearPrice * 2.15);
             bearPriceText.innerText = "Price: " + bearPrice;
-            audioStore.play();
+          
         }
         else{
             bearPriceText.innerText = "Roar or whatever a bear says... Price: " + bearPrice;
